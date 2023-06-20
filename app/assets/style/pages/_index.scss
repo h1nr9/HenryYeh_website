@@ -6,11 +6,12 @@ img{
 }
 
 .section-about{
-  // height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 64px;
     p{
     max-width: 400px;
   }
-  .about {
+  .home {
   @include empty-anchor;
   }
 }
