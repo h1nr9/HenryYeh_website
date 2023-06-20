@@ -1,10 +1,39 @@
----
-title: Henry Yeh
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Henry Yeh</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style/all.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
 
+  <body>
+    <header class="nav pt-8 pb-8 sticky-top">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a href="#" class="font-Azeret fs-7 fw-bolder">Henry Yeh.</a>
+        <ul class="d-flex fs-5 font-Azeret">
+          <li class="me-9"><a href="#home">HOME</a></li>
+          <li class="me-9"><a href="#about">ABOUT</a></li>
+          <li class="me-9"><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </header>
+
+    
 <main class="container">
   <section class="section-about">
     <div class="home" id="home"></div>
@@ -141,3 +170,48 @@ current: index
     </div>
   </section>
 </main>
+
+
+    <footer class="footer pb-9">
+      <div class="contact" id="contact"></div>
+      <h2 class="underline">
+        <a href="#">CONTACT</a>
+      </h2>
+
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="fs-7 ms-10 text-center">
+          <p class="mb-5 fw-bold">葉宇恆</p>
+          <p class="font-Azeret">Henry Yeh</p>
+        </div>
+        <div class="icons d-flex flex-column align-items-start ps-9">
+          <a
+            href="https://github.com/h1nr9"
+            class="d-flex justify-content-center mb-5"
+            target="_blank"
+          >
+            <img
+              src="./assets/images/github-mark-white.png"
+              alt="github"
+              class="me-3"
+            />
+            <p class="fs-5">github/h1nr9</p>
+          </a>
+          <a href="Tel:0911254265" class="d-flex justify-content-center mb-5">
+            <span class="material-symbols-outlined me-3"> call </span>
+            <p class="fs-5">0911-254-256</p>
+          </a>
+          <a
+            href="mailto:henry20512615@gmail.com"
+            class="d-flex justify-content-center"
+          >
+            <span class="material-symbols-outlined me-3"> mail </span>
+            <p class="fs-5">henry20512615@gmail.com</p>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>
