@@ -1,0 +1,6 @@
+@mixin empty-anchor {
+    display: block;
+    height: 100px; /*此數值為Navbar高度*/
+    margin-top: -100px;
+    visibility: hidden;
+  }
