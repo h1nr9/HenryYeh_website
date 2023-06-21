@@ -21,43 +21,36 @@
   </head>
 
   <body>
-    <header class="nav pt-8 pb-8 sticky-top">
+    <header class="nav pt-4 pt-md-8 pb-4 pb-md-8 fixed-top">
       <div
-        class="container d-flex justify-content-between align-items-center"
-        id="navbarSupportedContent"
+        class="container d-md-flex justify-content-between align-items-center"
       >
-        <a href="#" class="font-Azeret fs-7 fw-bolder">Henry Yeh.</a>
-
-        <ul class="d-md-flex fs-5 font-Azeret d-none">
-          <li class="me-9"><a href="#home">HOME</a></li>
-          <li class="me-9"><a href="#portfolio">PORTFOLIO</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-        </ul>
-
-        <div class="collapse" id="navbarToggleExternalContent">
-          <div>
-            <ul class="fs-5 font-Azeret flex-column">
-              <li class="me-9"><a href="#home">HOME</a></li>
-              <li class="me-9"><a href="#portfolio">PORTFOLIO</a></li>
-              <li><a href="#contact">CONTACT</a></li>
-            </ul>
-          </div>
-        </div>
-        <nav class="navbar navbar-dark bg-primary d-md-none">
-          <div class="container-fluid">
+        <div class="d-flex justify-content-between align-items-center">
+          <a href="#" class="font-Azeret fs-7 fw-bolder">Henry Yeh.</a>
+          <nav class="navbar navbar-dark bg-primary d-md-none">
             <button
               class="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#navbarToggleExternalContent"
+              data-bs-target="#navbarContent"
               aria-controls="navbarToggleExternalContent"
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
               <span class="navbar-toggler-icon"></span>
             </button>
-          </div>
-        </nav>
+          </nav>
+        </div>
+        <ul
+          class="collapse d-md-flex fs-5 font-Azeret text-center"
+          id="navbarContent"
+        >
+          <li class="mt-5 mt-md-0 me-md-9"><a href="#home">HOME</a></li>
+          <li class="mt-5 mt-md-0 me-md-9">
+            <a href="#portfolio">PORTFOLIO</a>
+          </li>
+          <li class="mt-5 mt-md-0"><a href="#contact">CONTACT</a></li>
+        </ul>
       </div>
     </header>
 
