@@ -16,16 +16,4 @@ footer{
         @include empty-anchor;
     }
 }
-.section-portfolio{
-    .portfolio-website{
-        background: $dark;
-        border-radius: 12px;
-        border: 2px solid transparent;
-        &:hover{
-            border: 2px solid #F2C14E;
-        }
-    }
-    .more{  
-            color: #F2C14E;  
-    }
-}
+
