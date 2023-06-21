@@ -22,14 +22,42 @@
 
   <body>
     <header class="nav pt-8 pb-8 sticky-top">
-      <div class="container d-flex justify-content-between align-items-center">
+      <div
+        class="container d-flex justify-content-between align-items-center"
+        id="navbarSupportedContent"
+      >
         <a href="#" class="font-Azeret fs-7 fw-bolder">Henry Yeh.</a>
-        <ul class="d-flex fs-5 font-Azeret">
+
+        <ul class="d-md-flex fs-5 font-Azeret d-none">
           <li class="me-9"><a href="#home">HOME</a></li>
-          <li class="me-9"><a href="#about">ABOUT</a></li>
           <li class="me-9"><a href="#portfolio">PORTFOLIO</a></li>
           <li><a href="#contact">CONTACT</a></li>
         </ul>
+
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div>
+            <ul class="fs-5 font-Azeret flex-column">
+              <li class="me-9"><a href="#home">HOME</a></li>
+              <li class="me-9"><a href="#portfolio">PORTFOLIO</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark bg-primary d-md-none">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarToggleExternalContent"
+              aria-controls="navbarToggleExternalContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </nav>
       </div>
     </header>
 
@@ -37,15 +65,19 @@
 <main class="container">
   <section class="section-about">
     <div class="home" id="home"></div>
-    <div class="d-flex justify-content-center align-items-center">
+    <div
+      class="d-flex justify-content-center align-items-center introduce flex-column flex-md-row"
+    >
       <img
         src="./assets/images/Henry.JPG"
         alt="Henry"
-        class="img-fluid rounded me-9"
+        class="img-fluid rounded me-0 me-md-9"
       />
       <div>
-        <h1 class="d-flex flex-column fs-8 fw-bolder mb-5 mt-5">
-          葉宇恆 (Yeh Yu Heng)
+        <h1
+          class="d-flex flex-column fs-8 fw-bolder mb-5 mt-5 text-center text-md-start"
+        >
+          葉宇恆
           <span class="font-Azeret mt-2"> Henry Yeh</span>
         </h1>
         <div class="lh-base">
@@ -79,7 +111,7 @@
       <a href="#" id="portfolio">PORTFOLIO</a>
     </h2>
     <div class="row">
-      <div class="col-4">
+      <div class="col-md-4">
         <div class="portfolio-website p-8">
           <a href="https://h1nr9.github.io/glasses_website/" target="_blank">
             <img
@@ -101,7 +133,7 @@
           </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-md-4">
         <div class="portfolio-website p-8">
           <a href="https://h1nr9.github.io/coding_home/" target="_blank">
             <img
@@ -123,7 +155,7 @@
           </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-md-4">
         <div class="portfolio-website p-8">
           <a href="https://h1nr9.github.io/backend_website/" target="_blank">
             <img
@@ -132,7 +164,7 @@
             />
           </a>
           <h5 class="mb-4 fs-5 fw-bold">後台表單網站</h5>
-          <p class="mb-4">
+          <p class="mb-4 lh-base">
             使用HTML、CSS、Bootstrap Modal、CKEditor，製作後台表單設計網站。
           </p>
           <div class="d-flex justify-content-end">
@@ -145,7 +177,7 @@
           </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-md-4">
         <div class="portfolio-website p-8">
           <a href="https://www.youtube.com/watch?v=wUJsCEleBak" target="_blank">
             <img
@@ -178,12 +210,15 @@
         <a href="#">CONTACT</a>
       </h2>
 
-      <div class="d-flex justify-content-center align-items-center">
-        <div class="fs-7 ms-10 text-center">
+      <div
+        class="d-md-flex justify-content-center align-items-center flex-column flex-md-row"
+      >
+        <div class="fs-7 ms-md-10 text-center mb-8">
           <p class="mb-5 fw-bold">葉宇恆</p>
           <p class="font-Azeret">Henry Yeh</p>
         </div>
-        <div class="icons d-flex flex-column align-items-start ps-9">
+
+        <div class="icons d-flex flex-column align-items-md-start ps-md-9">
           <a
             href="https://github.com/h1nr9"
             class="d-flex justify-content-center mb-5"
