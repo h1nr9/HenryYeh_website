@@ -1,9 +1,11 @@
 img{
-  width: 20%;
+  max-width: 20%;
   @media(max-width: 767px){
-    width: 50%;
+    max-width: 50%;
   }
 }
+
+
 
 .Emoji{
   font-size: 24px;
@@ -17,11 +19,7 @@ img{
   .home {
   @include empty-anchor;
   }
-  .introduce{
-    @media (max-width:767px){
-
-    }
-  }
+ 
 }
 .section-portfolio{
   .portfolio-website{
